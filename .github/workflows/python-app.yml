@@ -37,4 +37,4 @@ jobs:
     - name: Run Python
       run: |
         # stop the build if there are Python syntax errors or undefined names
-        python chatgpt.py
+        python chatgpt.py --context context.txt -k ${{ secrets.OPAI_API }}
